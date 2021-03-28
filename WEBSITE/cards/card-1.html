@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card1</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/7576b11228.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    
+</head>
+
+<style>
+
+
+    body{
+      
+        margin: 0px;
+     width: 100%;
+     font-size: 12px; 
+    }
+
+    /* for all*/
+    * {
+       
+        padding: 0px;
+        font-family: sans-serif;
+    }
+
+    /* top bar*/
+    /* top bar*/
+ul{
+    background-color: #8d3d05;
+    color:white;
+    
+}
+.a{
+    color: white;
+    bottom: 50px;
+   }
+li{
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    font-size: medium;
+    text-decoration: none;
+    cursor: pointer;
+    
+    }
+    li .a{
+        padding: 12px 14px;
+    }
+    li .a:hover {
+     color: #c9c8c8;
+     
+}
+.a:link {
+  text-decoration: none;
+}
+.a:hover {
+  text-decoration: underline;
+}
+
+.a:active {
+  text-decoration: underline;
+
+}
+.abc{
+    margin-left: 430px;
+}
+.xyz{
+    width :12px;
+}
+li{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: medium;
+    text-decoration: none;
+    cursor: pointer;
+    
+    
+    }
+    li .a{
+        padding: 14px 16px;
+        transition: 0.5s;
+    }
+    li .a:hover {
+     color: #c9c8c8;  
+      
+}
+.a:hover {
+  
+  padding-left: 25px;
+}
+    /* sidenavbar*/
+
+    .sidenav {
+        height: 100%;
+        width: 0px;
+        position: fixed;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        background-color: #8d3d05;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        margin-top: 30px;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+        color: white;
+        box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+
+
+    .sidenav a:hover {
+        background-color: gray;
+        margin-left: 5px;
+        color: white;
+ 
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        cursor: pointer;
+        color: gray;
+    }
+
+    .closebtn:hover {
+        color: white;
+    }
+
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            height: auto;
+            width: 100%;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+
+    /*search bar*/
+    input[type=text] {
+        width: 130px;
+        height: 10px;
+        box-sizing: border-box;
+        border: 2px solid white;
+        border-radius: 10px;
+        margin-left: 30px;
+        margin-top: 5px;
+        font-size: 16px;
+        background-color: white;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.5s ease-in-out;
+        color: gray;
+    }
+
+
+input[type=text]:focus {
+  width: 60%;  
+  
+}
+    input[type=text2] {
+        width: 230px;
+        height: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        border: 2px solid white;
+        border-radius: 10px;
+        margin-left: 17px;
+        margin-top: 3px;
+        background-color: white;
+        position: -webkit-sticky;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.5s ease-in-out;
+    }
+
+    .contact1{
+        display: block;
+    }
+
+
+/*card1*/
+   .card1{
+       display: block;
+       
+   }
+    .card{
+        width:420px;
+       height: 415px;
+       margin-left: 180px; 
+    }
+    img{
+        width:420px;
+       height: 415px;
+      
+    }
+    .card img:hover{
+        border: 2px solid #8d3d05;
+        box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+       
+    }
+    .carda{
+        width:780px;
+       height: 415px;
+       margin-left: 530px;
+       margin-top: -405px
+    }
+    .pist{
+        width:580px;
+       height: 415px;
+       margin-top: 290px;
+       margin-top: -400px
+    }
+    h2,p{
+        
+        margin-left: 150px;
+        font-size: xx-large;
+      color: #8d3d05;
+    }
+    h2{
+        text-align: center;
+        font-family: cursive;
+        text-overflow: unset;
+    }
+    p{
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       text-overflow: unset;
+       font-size: x-large;
+       color: gray;
+       word-spacing: 10px;
+  }
+     /*horizontalline*/
+     .line{
+        
+         background-color: rgb(219, 219, 219);
+         height:1px;
+         width: 1000px;
+         margin-left: 180px;
+         margin-top: 45px;
+     }
+/*order place*/
+    .Contactfrm{
+        height:400px;
+        width:1000px;
+        background-color: white;
+        margin-left: 180px;
+        margin-bottom: 0px;
+        margin-top: 70px;
+        transition: 0.5s;
+        box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+    h3, p{
+        text-align: center;
+        color:  #8d3d05;
+        margin-top: 150px;
+    }
+    p{
+        text-align: center;
+        color:  #8d3d05;
+        margin-top: 10px;
+        text-decoration: underline;
+    }
+    .img1{
+        
+        background:no-repeat;
+        height:400px;
+        width:500px; 
+    }
+   .form1{
+       margin-left: 250px;
+       margin-top: -350px;
+   }
+    .name, .msg,.btm,.option{
+        width: 330px;
+        border: none;
+       margin-left: 340px;
+        text-align: center;
+        border-bottom: 1.5px solid #8d3d05;
+    }
+    .option{
+        text-align: center;
+    }
+    .btm {
+        
+        width: 100px;
+        border-radius: 10px;
+        color: 8d3d05;
+        margin-left: 470px;
+        cursor: pointer;
+        text-align: center;
+        border-bottom: 1.5px solid #8d3d05;
+    }
+    .name:hover{
+         border: 2px solid #8d3d05;
+    }
+    
+    .msg:hover{
+         border: 2px solid #8d3d05;
+    }
+    .btm:hover{
+        border: 2px solid #8d3d05;  
+    }
+    h4{
+    text-align: center;
+        color:  #8d3d05;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-family: cursive;
+        font-size: large;
+        margin-left: 235px;
+    }
+   
+    /*contact*/
+
+    .foot{
+         background-color:#8d3d05 ;
+         height: 80px;
+         margin-top: 30px;
+     }
+     .contact{
+         margin-top: -50px;
+     }
+
+      /*contact1*/
+
+      .foot1{
+         background-color:#8d3d05 ;
+         height: 80px;
+         margin-top: 530px;
+     }
+     .contact1{
+         margin-top: -135px;
+     }
+     a , .contact1{
+         color: whitesmoke;
+     }
+     a  :hover{
+         color: gray;
+     }
+        /*contact2*/
+     .contact2{
+         float: right;
+         margin-right: 30px;
+         margin-top: -30PX;
+         border-radius: 50%;
+         width: 25px;
+         height: 30px;
+     }
+
+</style>
+
+<body>
+
+    <!------TOP BAR---->
+<div class="container-fluid">
+    
+    <ul>
+        <li>
+            <i class="far fa-envelope-open" ></i><a  class ="a" href="" >marudryfruit@gmail.com</a>
+        </li>
+
+        <li>
+            <i class="fas fa-phone-alt"></i><a class ="a" href="">+92-3132176115
+            </a>
+        </li>
+        <li>
+            <a  class ="a" href="https://www.facebook.com/"><i class="abc fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+            <a class ="a" href="https://www.instagram.com/"><i class="xyz fab fa-instagram"></i></a>
+        </li>
+        <li>
+            <a  class ="a" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li>  
+            <input  type="text2" name="search" placeholder="Search">
+          
+        </li>
+      </ul>
+    
+    </div>
+    <!------side NAVBAR---->
+    <div id="mySidenav" class="sidenav">
+        <form>
+            <input type="text" name="search" placeholder="Search..">
+        </form>
+        <br>
+        <i href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</i>
+        <a href="index.html"><i class="i1 fas fa-home"></i><br>HOME</br></a>
+        <a href="About.html"><i class="far fa-question-circle"></i><br>ABOUT </br></a>
+        <a href="contact.html"><i class="fas fa-phone"></i><br>CONTACT</br></a>
+    </div>
+    <span style="font-size:30px;cursor:pointer;margin-top: 66px;margin-left: 25px;color: grey;"
+        onclick="openNav()">&#9776;
+    </span>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+
+        </script>
+
+<!---product card1-->
+
+<section class="card1">
+    <br>
+    <br>
+    <div class="card">
+      <img src="pista.jpg">
+    </div>
+
+    <div class="carda">
+        <div class="pist">
+         <h2>Pistachio(Pakistan)</h2>
+         <p>Brand:    MaruCo</p>
+         <p>Product Name:      Pistachio</p>
+         <p>Origin:      Turkey</p>
+         <p>Picture:      Original</p>
+         <p>Availibility:      Instock</p>
+         <p>Delivery:      With In 3-4 Days</p>
+         <p>Rs:     250/Kg</p>
+    </div>
+</div>
+
+
+
+    <div class="line">
+
+    </div>
+    <!--contact order place-->
+    <div class ="Contactfrm">
+            <img class ="img1" src="dry .friu.jpg">
+        <div class="form1">
+            <h4>Place Your Order Here:</h4>
+           <input class = "name" placeholder="Name ...">
+           <br>
+           <br>
+           <input class = "msg" placeholder="Address ...">
+           <br>
+           <br>
+           <input class = "msg" placeholder="City ...">
+           <br>
+           <br>
+           <input class = "msg" placeholder="Phone Number ...">
+           <br>
+           <br>
+           <select class="option">
+               <option>Select Any Thing You Want....</option>
+               <option>2kg Pistachio in Rs.500/-</option>
+               <option>3kg Pistachio in Rs.750/-</option>
+               <option>4kg Pistachio in Rs.1000/-</option>
+           </select>
+           <br>
+           <br>
+           <input class = "btm" value="Place" type="button" >
+        </div>
+</section>
+     
+   <!---footer-->
+   <section class="foot1">
+    <br>
+    <div class="contact1">
+        <h3 style="text-align: center; color: cornsilk; font-size: x-small;font-family: cursive;
+        font-style: italic;"><a href="index.html">Aptech Project MaruDryFruits</a> © - 2021 All rights are reserved.</h3>
+    </div>
+    <div class="contact2">
+        <a href="contact.html"> <i style="font-size:24px" class="fa">&#xf077;</i></a>
+    </div>
+</section>
+
+
+    <script href="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        
+        <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
